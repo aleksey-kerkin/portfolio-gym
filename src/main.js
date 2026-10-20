@@ -97,7 +97,7 @@ const updateBill = () => {
   );
 };
 
-const show = (i) => {
+const show = (i, scroll = true) => {
   current = i;
   steps.forEach((s, k) => (s.hidden = k !== i));
   indicators.forEach((el, k) => {
@@ -109,9 +109,10 @@ const show = (i) => {
   backBtn.hidden = i === 0;
   nextBtn.textContent = i === steps.length - 1 ? 'Оформить подписку' : 'Далее';
   if (i === steps.length - 1) updateBill();
-  steps[i]
-    .querySelector('legend')
-    .scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  if (scroll)
+    steps[i]
+      .querySelector('legend')
+      .scrollIntoView({ block: 'nearest', behavior: 'smooth' });
 };
 
 form.addEventListener('change', (e) => {
@@ -135,4 +136,4 @@ form.addEventListener('submit', (e) => {
   success.textContent = `Готово! ${pkg.dataset.name} оформлен. Мы отправим подтверждение на почту.`;
 });
 
-show(0);
+show(0, false);
