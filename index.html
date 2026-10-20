@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <title>Gymnis — фитнес-клуб: тренировки, абонементы, запись онлайн</title>
+    <meta
+      name="description"
+      content="Gymnis — фитнес-клуб с персональными тренировками, групповыми занятиями и современным оборудованием. Оформите абонемент онлайн." />
+    <meta
+      name="theme-color"
+      content="#010101" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero-center.webp" />
+    <link
+      rel="stylesheet"
+      href="/src/scss/main.scss" />
+  </head>
+  <body>
+    <a
+      class="skip-link"
+      href="#main"
+      >Перейти к содержимому</a
+    >
+
+    <header
+      class="header"
+      id="top">
+      <div class="header__inner container">
+        <a
+          class="header__logo"
+          href="#top"
+          aria-label="Gymnis — на главную"
+          >Gymnis</a
+        >
+        <button
+          class="header__burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Открыть меню">
+          <span class="header__burger-line"></span>
+        </button>
+        <nav
+          class="nav"
+          id="nav"
+          aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                class="nav__link nav__link--active"
+                href="#top"
+                aria-current="page">
+                <svg
+                  class="nav__icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path
+                    d="M12 3 2 12h3v9h5v-6h4v6h5v-9h3z"
+                    fill="currentColor" /></svg
+                >Главная</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#about"
+                >О нас</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#services"
+                >Услуги</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#testimonial"
+                >Отзывы</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                href="#join"
+                >Записаться</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        class="hero"
+        aria-labelledby="hero-title">
+        <div class="hero__gallery">
+          <img
+            class="hero__img hero__img--side"
+            src="/img/hero-left.webp"
+            alt="Девушка выполняет жим штанги над головой"
+            width="1000"
+            height="667" />
+          <img
+            class="hero__img hero__img--center"
+            src="/img/hero-center.webp"
+            alt="Атлет делает подъём штанги на бицепс"
+            width="1000"
+            height="667"
+            fetchpriority="high" />
+          <img
+            class="hero__img hero__img--side"
+            src="/img/hero-right.webp"
+            alt="Тренировка с канатами в зале"
+            width="1000"
+            height="667" />
+        </div>
+        <div class="hero__content container">
+          <h1
+            class="hero__title gradient-text"
+            id="hero-title">
+            Измени своё тело, <br />измени свою жизнь.
+          </h1>
+          <p class="hero__text">
+            Начни путь к форме мечты уже сегодня: персональные тренировки,
+            современное оборудование и доступные абонементы.
+          </p>
+          <div class="hero__actions">
+            <a
+              class="btn btn--outline"
+              href="#services"
+              >Наши услуги</a
+            >
+            <a
+              class="btn btn--primary"
+              href="#join">
+              <svg
+                class="btn__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M2 10h2V8h2v8H4v-2H2zm4 -3h2v10H6zm10 0h2v10h-2zm2 1h2v2h2v4h-2v2h-2zM8 11h8v2H8z" />
+              </svg>
+              Выбрать абонемент</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about"
+        id="about"
+        aria-labelledby="about-title">
+        <div class="about__card container">
+          <img
+            class="about__img"
+            src="/img/about.webp"
+            alt="Спортсмен выполняет становую тягу в тёмном зале"
+            width="1000"
+            height="667"
+            loading="lazy" />
+          <div class="about__body">
+            <h2
+              class="about__title gradient-text section-title"
+              id="about-title">
+              О нас
+            </h2>
+            <p class="about__text">
+              Добро пожаловать в Gymnis, где фитнес встречается со страстью. У
+              нас есть всё, чтобы вы <b><i>достигли своих целей</i></b
+              >, будь вы <b><i>новичком</i></b> или
+              <b><i>опытным спортсменом</i></b
+              >. От опытных тренеров до современного оборудования: мы
+              позаботились обо всём.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="services"
+        id="services"
+        aria-labelledby="services-title">
+        <div class="container">
+          <h2
+            class="section-title gradient-text services__title"
+            id="services-title">
+            Наши услуги
+          </h2>
+          <div
+            class="tabs"
+            data-tabs>
+            <div
+              class="tabs__list"
+              role="tablist"
+              aria-label="Услуги клуба">
+              <button
+                class="tabs__tab tabs__tab--active"
+                role="tab"
+                id="tab-1"
+                aria-controls="panel-1"
+                aria-selected="true"
+                type="button">
+                Персональные тренировки
+              </button>
+              <button
+                class="tabs__tab"
+                role="tab"
+                id="tab-2"
+                aria-controls="panel-2"
+                aria-selected="false"
+                tabindex="-1"
+                type="button">
+                Групповые занятия
+              </button>
+              <button
+                class="tabs__tab"
+                role="tab"
+                id="tab-3"
+                aria-controls="panel-3"
+                aria-selected="false"
+                tabindex="-1"
+                type="button">
+                Кардио и силовая зона
+              </button>
+              <button
+                class="tabs__tab"
+                role="tab"
+                id="tab-4"
+                aria-controls="panel-4"
+                aria-selected="false"
+                tabindex="-1"
+                type="button">
+                Питание
+              </button>
+            </div>
+
+            <div
+              class="tabs__panel"
+              role="tabpanel"
+              id="panel-1"
+              aria-labelledby="tab-1"
+              tabindex="0">
+              <div class="service">
+                <div class="service__body">
+                  <h3 class="service__title">🏋️ Персональные тренировки</h3>
+                  <p class="service__text">
+                    Достигайте целей быстрее с индивидуальными занятиями у
+                    сертифицированного тренера. Каждая тренировка строится под
+                    ваши задачи: похудеть, набрать мышечную массу или улучшить
+                    общее самочувствие. Тренер составит программу, поддержит
+                    мотивацию и проследит за техникой, чтобы результат был
+                    безопасным и заметным.
+                  </p>
+                  <h4 class="service__subtitle">🏆 Что вы получаете:</h4>
+                  <ul class="service__list">
+                    <li>
+                      <b>Индивидуальная программа:</b> под ваш уровень
+                      подготовки и цели.
+                    </li>
+                    <li>
+                      <b>Контроль техники:</b> учимся выполнять упражнения
+                      правильно и без травм.
+                    </li>
+                    <li>
+                      <b>Отслеживание прогресса:</b> замеры и корректировка
+                      плана каждый месяц.
+                    </li>
+                    <li>
+                      <b>Гибкий график:</b> занятия в удобное время, с 6:00 до
+                      23:00.
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  class="service__img"
+                  src="/img/svc-personal.webp"
+                  alt="Тренер помогает клиенту выполнять отжимания"
+                  width="1000"
+                  height="667"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div
+              class="tabs__panel"
+              role="tabpanel"
+              id="panel-2"
+              aria-labelledby="tab-2"
+              tabindex="0"
+              hidden>
+              <div class="service">
+                <div class="service__body">
+                  <h3 class="service__title">👥 Групповые занятия</h3>
+                  <p class="service__text">
+                    Тренируйтесь в команде единомышленников. Более 50 видов
+                    занятий в неделю: функциональный тренинг, сайкл, стретчинг,
+                    йога, бокс и танцевальные программы. Энергия группы помогает
+                    не пропускать тренировки и выкладываться на максимум.
+                  </p>
+                  <h4 class="service__subtitle">🏆 Что вы получаете:</h4>
+                  <ul class="service__list">
+                    <li><b>Разнообразие:</b> новое расписание каждый месяц.</li>
+                    <li>
+                      <b>Любой уровень:</b> занятия для новичков и продвинутых.
+                    </li>
+                    <li><b>Сообщество:</b> мотивация и поддержка группы.</li>
+                  </ul>
+                </div>
+                <img
+                  class="service__img"
+                  src="/img/svc-group.webp"
+                  alt="Ряды гантелей в просторном зале"
+                  width="1000"
+                  height="667"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div
+              class="tabs__panel"
+              role="tabpanel"
+              id="panel-3"
+              aria-labelledby="tab-3"
+              tabindex="0"
+              hidden>
+              <div class="service">
+                <div class="service__body">
+                  <h3 class="service__title">💪 Кардио и силовая зона</h3>
+                  <p class="service__text">
+                    Более 1 200 м² пространства с тренажёрами Technogym и Hammer
+                    Strength, свободными весами, беговыми дорожками и зоной
+                    функционального тренинга. Оборудование обслуживается
+                    ежедневно, а дежурный тренер всегда подскажет технику.
+                  </p>
+                  <h4 class="service__subtitle">🏆 Что вы получаете:</h4>
+                  <ul class="service__list">
+                    <li>
+                      <b>Современные тренажёры:</b> обновление парка каждый год.
+                    </li>
+                    <li>
+                      <b>Свободные веса:</b> гантели до 60 кг, 8 силовых рам.
+                    </li>
+                    <li>
+                      <b>Кардиозона:</b> 40 дорожек, велотренажёров и эллипсов.
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  class="service__img"
+                  src="/img/svc-cardio.webp"
+                  alt="Девушка выполняет жим штанги в силовой раме"
+                  width="1000"
+                  height="667"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div
+              class="tabs__panel"
+              role="tabpanel"
+              id="panel-4"
+              aria-labelledby="tab-4"
+              tabindex="0"
+              hidden>
+              <div class="service">
+                <div class="service__body">
+                  <h3 class="service__title">🥗 Консультации по питанию</h3>
+                  <p class="service__text">
+                    Без правильного питания тренировки работают вполовину. Наш
+                    нутрициолог разберёт ваш рацион, рассчитает КБЖУ и составит
+                    понятный план питания, который легко соблюдать в обычной
+                    жизни.
+                  </p>
+                  <h4 class="service__subtitle">🏆 Что вы получаете:</h4>
+                  <ul class="service__list">
+                    <li>
+                      <b>Персональный план:</b> с учётом ваших привычек и целей.
+                    </li>
+                    <li>
+                      <b>Еженедельный контроль:</b> корректировка по
+                      результатам.
+                    </li>
+                    <li>
+                      <b>Без жёстких диет:</b> устойчивый результат без срывов.
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  class="service__img"
+                  src="/img/svc-nutrition.webp"
+                  alt="Мужчина делает отжимания на гантелях дома"
+                  width="1000"
+                  height="667"
+                  loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="testimonial"
+        id="testimonial"
+        aria-labelledby="testimonial-title">
+        <div class="testimonial__card container">
+          <div class="testimonial__body">
+            <svg
+              class="testimonial__quote"
+              viewBox="0 0 48 36"
+              aria-hidden="true">
+              <path
+                fill="url(#qg)"
+                d="M0 36V20C0 8 6 1 18 0v8c-5 1-8 5-8 10h8v18zm26 0V20C26 8 32 1 44 0v8c-5 1-8 5-8 10h8v18z" />
+              <defs>
+                <linearGradient
+                  id="qg"
+                  x1="0"
+                  x2="1">
+                  <stop stop-color="#2ca2fa" />
+                  <stop
+                    offset="1"
+                    stop-color="#6972f9" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <h2
+              class="section-title gradient-text testimonial__title"
+              id="testimonial-title">
+              Отзывы
+            </h2>
+            <figure class="testimonial__figure">
+              <figcaption class="testimonial__lead">
+                Результаты, которые меняют жизнь, и поддержка, которой нет
+                больше нигде
+              </figcaption>
+              <blockquote class="testimonial__text">
+                <p>
+                  С тех пор как я пришёл в Gymnis, мой подход к фитнесу
+                  полностью изменился. Я сбросил 7 килограммов и заметно
+                  прибавил в рельефе, но главное другое: дружелюбное сообщество,
+                  грамотные тренеры и разнообразие программ каждый день
+                  мотивируют меня становиться лучше. Я никогда не чувствовал
+                  себя таким уверенным и энергичным и рекомендую этот зал всем,
+                  кто хочет настоящих, долгосрочных перемен.
+                </p>
+              </blockquote>
+              <p class="testimonial__author">
+                <b>Дмитрий Соколов</b>, клиент клуба 2 года
+              </p>
+            </figure>
+          </div>
+          <img
+            class="testimonial__img"
+            src="/img/testimonial.webp"
+            alt="Портрет довольного клиента клуба"
+            width="1000"
+            height="1500"
+            loading="lazy" />
+        </div>
+      </section>
+
+      <section
+        class="join"
+        id="join"
+        aria-labelledby="join-title">
+        <div class="join__inner container">
+          <h2
+            class="section-title gradient-text join__title"
+            id="join-title">
+            Записаться
+          </h2>
+          <ol
+            class="steps"
+            aria-label="Шаги оформления">
+            <li
+              class="steps__item steps__item--active"
+              data-step-indicator="1">
+              Абонемент
+            </li>
+            <li
+              class="steps__item"
+              data-step-indicator="2">
+              Оплата
+            </li>
+            <li
+              class="steps__item"
+              data-step-indicator="3">
+              Промокод
+            </li>
+            <li
+              class="steps__item"
+              data-step-indicator="4">
+              Итог
+            </li>
+          </ol>
+
+          <form
+            class="form"
+            id="join-form"
+            novalidate>
+            <fieldset
+              class="form__step"
+              data-step="1">
+              <legend class="form__legend">1. Выберите абонемент</legend>
+              <div class="packages">
+                <label class="package">
+                  <input
+                    class="package__input visually-hidden"
+                    type="radio"
+                    name="package"
+                    value="monthly"
+                    data-price="1500"
+                    data-name="Месячный абонемент" />
+                  <span class="package__card">
+                    <span class="package__name">Месячный</span>
+                    <span class="package__price">1 500 ₽</span>
+                    <span class="package__note"
+                      ><b>Автопродление</b>, отмена в любой момент</span
+                    >
+                    <span class="package__benefits-title">Что входит:</span>
+                    <span class="package__list">
+                      <span class="package__benefit"
+                        >Консультации профессионалов</span
+                      >
+                      <span class="package__benefit"
+                        >Разнообразное оборудование</span
+                      >
+                      <span class="package__benefit"
+                        >Зоны функционального тренинга</span
+                      >
+                      <span class="package__benefit"
+                        >Дружелюбная атмосфера</span
+                      >
+                    </span>
+                    <span
+                      class="package__btn"
+                      aria-hidden="true"
+                      ><span class="package__btn-off">Выбрать</span
+                      ><span class="package__btn-on"
+                        >Абонемент выбран</span
+                      ></span
+                    >
+                  </span>
+                </label>
+                <label class="package package--featured">
+                  <input
+                    class="package__input visually-hidden"
+                    type="radio"
+                    name="package"
+                    value="yearly"
+                    data-price="10000"
+                    data-name="Годовой абонемент"
+                    checked />
+                  <span class="package__card">
+                    <span class="package__name">Годовой</span>
+                    <span class="package__price">10 000 ₽</span>
+                    <span class="package__note"
+                      ><b>Отличный выбор</b>, экономия 8 000 ₽</span
+                    >
+                    <span class="package__benefits-title">Что входит:</span>
+                    <span class="package__list">
+                      <span class="package__benefit"
+                        >Консультации профессионалов</span
+                      >
+                      <span class="package__benefit"
+                        >Разнообразное оборудование</span
+                      >
+                      <span class="package__benefit"
+                        >Структурированные программы</span
+                      >
+                      <span class="package__benefit"
+                        >Более 50 групповых занятий</span
+                      >
+                      <span class="package__benefit"
+                        >Формирование здоровых привычек</span
+                      >
+                      <span class="package__benefit"
+                        >Поддержка в группе 24/7</span
+                      >
+                    </span>
+                    <span
+                      class="package__btn"
+                      aria-hidden="true"
+                      ><span class="package__btn-off">Выбрать</span
+                      ><span class="package__btn-on"
+                        >Абонемент выбран</span
+                      ></span
+                    >
+                  </span>
+                </label>
+              </div>
+              <p
+                class="form__error"
+                data-error="package"
+                role="alert"></p>
+            </fieldset>
+
+            <fieldset
+              class="form__step"
+              data-step="2"
+              hidden>
+              <legend class="form__legend">2. Способ оплаты</legend>
+              <div class="pay">
+                <details
+                  class="pay__group"
+                  open>
+                  <summary class="pay__summary">Банковская карта</summary>
+                  <div class="pay__options">
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="card" />
+                      <span>Visa / Mastercard / МИР</span></label
+                    >
+                  </div>
+                </details>
+                <details
+                  class="pay__group"
+                  open>
+                  <summary class="pay__summary">Электронный кошелёк</summary>
+                  <div class="pay__options">
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="sbp" />
+                      <span>СБП</span></label
+                    >
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="yoomoney" />
+                      <span>ЮMoney</span></label
+                    >
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="sberpay" />
+                      <span>SberPay</span></label
+                    >
+                  </div>
+                </details>
+                <details class="pay__group">
+                  <summary class="pay__summary">Банковский перевод</summary>
+                  <div class="pay__options">
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="sber" />
+                      <span>Сбербанк</span></label
+                    >
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="tbank" />
+                      <span>Т-Банк</span></label
+                    >
+                    <label class="radio"
+                      ><input
+                        type="radio"
+                        name="payment"
+                        value="alfa" />
+                      <span>Альфа-Банк</span></label
+                    >
+                  </div>
+                </details>
+              </div>
+              <p
+                class="form__error"
+                data-error="payment"
+                role="alert"></p>
+            </fieldset>
+
+            <fieldset
+              class="form__step"
+              data-step="3"
+              hidden>
+              <legend class="form__legend">3. Есть промокод?</legend>
+              <label class="field">
+                <span class="visually-hidden">Промокод</span>
+                <input
+                  class="field__input"
+                  type="text"
+                  name="voucher"
+                  placeholder="Введите промокод (необязательно)"
+                  autocomplete="off"
+                  aria-describedby="voucher-hint" />
+              </label>
+              <p
+                class="form__hint"
+                id="voucher-hint">
+                Попробуйте код <b>GYM10</b>: скидка 10%.
+              </p>
+              <p
+                class="form__error"
+                data-error="voucher"
+                role="alert"></p>
+            </fieldset>
+
+            <fieldset
+              class="form__step"
+              data-step="4"
+              hidden>
+              <legend class="form__legend">4. Детали оплаты</legend>
+              <dl class="bill">
+                <div class="bill__row">
+                  <dt data-bill="name">Годовой абонемент</dt>
+                  <dd data-bill="price">10 000 ₽</dd>
+                </div>
+                <div
+                  class="bill__row"
+                  data-bill="discount-row"
+                  hidden>
+                  <dt>Скидка по промокоду</dt>
+                  <dd data-bill="discount">0 ₽</dd>
+                </div>
+                <div class="bill__row">
+                  <dt>Итого <small>(включая НДС)</small></dt>
+                  <dd data-bill="total">10 000 ₽</dd>
+                </div>
+              </dl>
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="terms" />
+                <span class="checkbox__label"
+                  >Я соглашаюсь с <a href="#join">условиями обслуживания</a> и
+                  <a href="#join">политикой конфиденциальности</a></span
+                >
+              </label>
+              <p
+                class="form__error"
+                data-error="terms"
+                role="alert"></p>
+            </fieldset>
+
+            <div class="form__nav">
+              <button
+                class="btn btn--outline form__back"
+                type="button"
+                data-back
+                hidden>
+                Назад
+              </button>
+              <button
+                class="btn btn--primary form__next"
+                type="submit"
+                data-next>
+                Далее
+              </button>
+            </div>
+            <p
+              class="form__success"
+              role="status"
+              aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="header__logo">Gymnis</span>
+        <p class="footer__text">
+          © 2026 Gymnis. Проект для портфолио, все совпадения случайны.
+        </p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="/src/main.js"></script>
+  </body>
+</html>

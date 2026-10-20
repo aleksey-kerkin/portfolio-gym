@@ -1,0 +1,24 @@
+$bg: #010101;
+$card: #18181b;
+$card-2: #232327;
+$line: #2e2e33;
+$text: #fff;
+$muted: #b4b4bb;
+$c1: #2ca2fa;
+$c2: #6972f9;
+$grad: linear-gradient(90deg, $c1, $c2);
+$grad-v: linear-gradient(180deg, $c1, $c2);
+$f-head: 'Syne', 'Arial Black', sans-serif;
+$f-body: 'DM Sans', system-ui, sans-serif;
+$md: 768px;
+$lg: 1024px;
+@mixin md {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
